@@ -1,1 +1,102 @@
-page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Layout</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+       
+
+    }
+
+    header {
+        background-color: #ff7220;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    nav {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    .container {
+        display: flex;
+        border-top: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        height: 80vh;
+    }
+
+    .left, .right, .content {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .left {
+        width: 30%;
+        border-right: 1px solid #ccc;
+        background-color: #f4f4f4;
+    }
+
+    .content {
+        width: 40%;
+        background-color: #fff;
+    }
+
+    .right {
+        width: 30%;
+        border-left: 1px solid #ccc;
+        background-color: #f4f4f4;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    My Website Header
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="left">
+        Left Sidebar (30%)
+    </div>
+    <div class="content">
+        Main Content Area (40%)
+    </div>
+    <div class="right">
+        Right Sidebar (30%)
+    </div>
+</div>
+
+<footer>
+    © 2025 My Website
+</footer>
+
+</body>
+</html>
